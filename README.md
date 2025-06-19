@@ -1,5 +1,8 @@
 Repository: ujjwal895/ocl-thesis-framework
 Files analyzed: 3
+
+Estimated tokens: 984
+
 Directory structure:
 └── ujjwal895-ocl-thesis-framework/
     ├── agents/
@@ -8,9 +11,12 @@ Directory structure:
     │   └── dgr_config.yaml
     └── models/
         └── generator.py
+
+
 ================================================
 FILE: agents/dgr_agent.py
 ================================================
+
 import torch
 import torch.nn.functional as F
 from agents.base import BaseAgent
@@ -55,6 +61,9 @@ class DGRAgent(BaseAgent):
         loss.backward()
         self.gen_optimizer.step()
         self.generator.trained = True
+
+
+
 ================================================
 FILE: config/dgr_config.yaml
 ================================================
